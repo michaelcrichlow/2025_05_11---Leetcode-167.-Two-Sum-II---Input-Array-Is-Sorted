@@ -16,7 +16,7 @@ main :: proc() {
 }
 
 twoSum :: proc(numbers: []int, target: int) -> []int {
-	local_dict 	:= make(map[int]int, context.temp_allocator)
+	local_dict  := make(map[int]int, context.temp_allocator)
 	local_array := make([dynamic]int, context.temp_allocator)
 
 	for val, i in numbers {
